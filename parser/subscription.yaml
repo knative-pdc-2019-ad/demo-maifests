@@ -9,8 +9,7 @@ spec:
       revisionTemplate:
         spec:
           container:
-#            image: skylab00/parser:v05
-            image: gcr.io/pdc-19/parser:0.0.1
+            image: gcr.io/knative-broker/parser:0.0.3
           timeoutSeconds: 600
 
 ---

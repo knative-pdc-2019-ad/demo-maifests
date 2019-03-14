@@ -3,8 +3,7 @@ kind: ContainerSource
 metadata:
   name: gcp-filesource
 spec:
-#  image: skylab00/gcp-source:v11
-  image: gcr.io/pdc-19/gcp-source:0.0.1
+  image: gcr.io/knative-broker/gcp-source:0.0.3
   sink:
     apiVersion: eventing.knative.dev/v1alpha1
     kind: Channel

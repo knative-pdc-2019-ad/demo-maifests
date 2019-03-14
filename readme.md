@@ -31,7 +31,7 @@ $ kubectl apply -f resolver/subscription.yaml
 $ kubectl apply -f parser/subscription.yaml
 
 # GCP - Source
-$ kubectl apply -f gcp-source/subscription.yaml
+$ kubectl apply -f gcp-source/gcp-filesource.yaml
 ```
 
 

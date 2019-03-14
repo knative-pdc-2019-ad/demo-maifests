@@ -1,5 +1,14 @@
 ## Manifests - Guide
 
+### Service Repos
+[GCP-Source](https://github.com/knative-pdc-2019-ad/gcp-filesource-demo)
+
+[Parser](https://github.com/knative-pdc-2019-ad/parser-demo)
+
+[Resolver](https://github.com/knative-pdc-2019-ad/resolver-demo)
+
+
+
 ### Create Channels
 ```sh
 $ kubectl apply -f channel-records.yaml

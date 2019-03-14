@@ -1,0 +1,15 @@
+apiVersion: sources.eventing.knative.dev/v1alpha1
+kind: ContainerSource
+metadata:
+  name: gcp-filesource
+spec:
+#  image: skylab00/gcp-source:v11
+  image: gcr.io/pdc-19/gcp-source:0.0.1
+  sink:
+    apiVersion: eventing.knative.dev/v1alpha1
+    kind: Channel
+    name: records
+#  sink:
+#    apiVersion: serving.knative.dev/v1alpha1
+#    kind: Service
+#    name: message-dumper

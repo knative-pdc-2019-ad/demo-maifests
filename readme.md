@@ -44,7 +44,9 @@ $ kubectl get subscription
 $ kubectl get kvsc
 
 # View manifest
-$ kubectl get ksvc <ksvc_name> -oyaml
+$ kubectl get ksvc parser -oyaml
+$ kubectl get ksvc resolver -oyaml
+
 
 # View pods
 $ kubectl get po -n default

@@ -2,10 +2,14 @@ apiVersion: serving.knative.dev/v1alpha1
 kind: Service
 metadata:
   name: message-dumper
+  namespace: default
 spec:
   runLatest:
     configuration:
       revisionTemplate:
+        metadata:
+          annotations:
+            autoscaling.knative.dev/target: "20"
         spec:
           container:
             image: gcr.io/knative-releases/github.com/knative/eventing-sources/cmd/message_dumper

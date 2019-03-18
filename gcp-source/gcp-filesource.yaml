@@ -3,12 +3,8 @@ kind: ContainerSource
 metadata:
   name: gcp-filesource
 spec:
-  image: gcr.io/knative-broker/gcp-source:0.0.4
+  image: gcr.io/knative-broker/gcp-source:0.0.8
   sink:
     apiVersion: eventing.knative.dev/v1alpha1
     kind: Channel
     name: records
-#  sink:
-#    apiVersion: serving.knative.dev/v1alpha1
-#    kind: Service
-#    name: message-dumper

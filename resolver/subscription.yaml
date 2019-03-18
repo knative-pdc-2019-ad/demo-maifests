@@ -7,9 +7,12 @@ spec:
   runLatest:
     configuration:
       revisionTemplate:
+        metadata:
+          annotations:
+            autoscaling.knative.dev/target: "20"
         spec:
           container:
-            image: gcr.io/knative-broker/resolver:0.0.3
+            image: gcr.io/knative-broker/resolver:0.0.6
           timeoutSeconds: 600
 
 ---
